@@ -15,7 +15,54 @@
     <title>Bootstrap Login Form</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <style>
+      input[type='email'] {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+      input[type='password'] {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-top: 0px;
+      }
+    </style>
+
+    <div class="text-center mt-5">
+      <form style="max-width: 240px; margin: auto">
+        <img
+          class="mt-4 mb-4"
+          src="https://camo.githubusercontent.com/a664defdd5c2ec93a3fbfb51e0f2aaafa5dc57bf1e13aa47456ced037b3cebe8/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e302f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67"
+          height="72px"
+          alt="Bootstrap Logo"
+        />
+        <h1 class="h3 mb-3 font-weight-normal">Please Sign In</h1>
+        <label for="emailAddress" class="sr-only">Email Address</label>
+        <input
+          type="email"
+          id="emailAddress"
+          class="form-control"
+          placeholder="Email Address"
+          required
+          autofocus
+        />
+        <label for="password" class="sr-only">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          class="form-control"
+        />
+
+        <div class="checkbox mt-3">
+          <label>
+            <input type="checkbox" value="remember-me" /> Remember Me
+          </label>
+        </div>
+        <div class="mt-3">
+          <button class="btn btn-large btn-primary btn-block">Sign In</button>
+        </div>
+      </form>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
